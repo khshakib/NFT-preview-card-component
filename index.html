@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      color: white;
+    }
+
+    .container {
+      background-color: #0D1A2D;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+
+    }
+
+    .card {
+      background-color: hsl(216, 50%, 16%);
+      width: 350px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .primary-img {
+      width: 100%;
+      border-radius: 20px;
+
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .line{
+      background-color: hsl(215, 32%, 27%);
+      height: 1px;
+      border: none;
+    }
+    
+
+    .primary{
+      color:hsl(215, 51%, 70%);
+    }
+    .ethereum{
+      color: cyan;
+      font-weight: bold;
+    }
+    h1{
+      font-size: 1.4rem;
+    }
+    p{
+      color:hsl(215, 51%, 70%);
+      font-size: 18px;
+    }
+    .main{
+      color: white;
+    }
+    .footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer img{
+     width: 3rem;
+     margin-right: 17px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header class="card">
+      <img class="primary-img" src="images/image-equilibrium.jpg" alt="">
+
+
+      <h1> Equilibrium #3429</h1>
+      <p> Our Equilibrium collection promotes balance and calm.</p>
+      <div class="details">
+        <div class="left">
+          <img src="images/icon-ethereum.svg" alt="">
+          <span class="ethereum"> 0.041 ETH</span>
+        </div>
+        <div class="right"><img src="images/icon-clock.svg" alt="">
+          <span class="primary">3 days left</span>
+        </div>
+
+      </div>
+      <hr class="line">
+
+      <footer class="footer">
+        <img src="images/image-avatar.png" alt="">
+        <span class="primary"> Creation of <span class="main">Jules Wyvern</span> <span>
+      </footer>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+  
+  </div>
+</body>
+
+</html>
