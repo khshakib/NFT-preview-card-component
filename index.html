@@ -27,7 +27,7 @@
       font-family: 'Outfit', sans-serif;
       color: white;
     }
-
+/* container */
     .container {
       background-color: #0D1A2D;
       display: flex;
@@ -37,22 +37,24 @@
 
 
     }
-
+/* card */
     .card {
       background-color: hsl(216, 50%, 16%);
-      width: 350px;
+      width: 300px;
       padding: 20px;
       border-radius: 20px;
     }
     
+    /* img-container */
 
-    .primary-img {
+    
+    .img-container{
+      position: relative;
+    }
+    .img-container img {
       width: 100%;
       border-radius: 20px;
 
-    }
-    .img-container{
-      position: relative;
     }
    .img-container:hover:before{
      content: '';
@@ -66,81 +68,94 @@
      top: 0px;
      border-radius: 20px;
    }
-
+/* Details */
     .details {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    .line{
-      background-color: hsl(215, 32%, 27%);
-      height: 1px;
-      border: none;
-    }
-    
-
-    .primary{
+    .right,footer .primary{
       color:hsl(215, 51%, 70%);
     }
-    .ethereum{
+    .left{
       color: cyan;
       font-weight: bold;
+    }
+  /* section */
+    section{
+      padding: 7px 0px;
     }
     h1{
       font-size: 1.4rem;
     }
+    .creator:hover{
+      color: cyan;
+      cursor: pointer;
+    }
     p{
       color:hsl(215, 51%, 70%);
       font-size: 18px;
+      line-height: 2rem;
+    }
+    .line{
+      background-color: hsl(215, 32%, 27%);
+      height: 1px;
+      border: none;
+      margin: 10px 0;
     }
     .main{
       color: white;
 
     }
-    .main:hover{
-      color: cyan;
-      cursor: pointer;
-    }
+    
     .footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 .footer img{
-     width: 3rem;
+     width: 2rem;
      margin-right: 17px;
     }
+span{
+  font-size:16px;
+}
     
   </style>
 </head>
 
 <body>
-  <main class="container">
-    <header class="card">
-     <div class="img-container">
+  <div class="container">
+    <main class="card">
+     <header class="img-container">
       <img class="primary-img" src="images/image-equilibrium.jpg" alt="">
-     </div>
+     </header>
 
-
-      <h1 class="main"> Equilibrium #3429</h1>
+     <section>
+       
+      <h1 class="creator"> Equilibrium #3429</h1>
       <p> Our Equilibrium collection promotes balance and calm.</p>
       <div class="details">
         <div class="left">
           <img src="images/icon-ethereum.svg" alt="">
-          <span class="ethereum"> 0.041 ETH</span>
+          <span> 0.041 ETH</span>
         </div>
         <div class="right"><img src="images/icon-clock.svg" alt="">
-          <span class="primary">3 days left</span>
+          <span>3 days left</span>
         </div>
 
       </div>
+     </section>
+
+
       <hr class="line">
 
       <footer class="footer">
         <img src="images/image-avatar.png" alt="">
-        <span class="primary"> Creation of <span class="main">Jules Wyvern</span> <span>
+        <span class="primary"> Creation of <span class="creator">Jules Wyvern</span> <span>
       </footer>
-  </main>
+      </main>
+    </div>
 
  
 
