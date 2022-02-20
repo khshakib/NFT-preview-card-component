@@ -44,12 +44,28 @@
       padding: 20px;
       border-radius: 20px;
     }
+    
 
     .primary-img {
       width: 100%;
       border-radius: 20px;
 
     }
+    .img-container{
+      position: relative;
+    }
+   .img-container:hover:before{
+     content: '';
+     background-color: hsl(178, 100%, 50%);
+     background: url('images/icon-view.svg') hsl(178, 100%, 50%,0.5) center no-repeat;
+    
+     position: absolute;
+     right: 0px;
+     left: 0px;
+     bottom: 0px;
+     top: 0px;
+     border-radius: 20px;
+   }
 
     .details {
       display: flex;
@@ -79,6 +95,11 @@
     }
     .main{
       color: white;
+
+    }
+    .main:hover{
+      color: cyan;
+      cursor: pointer;
     }
     .footer {
     display: flex;
@@ -89,16 +110,19 @@
      width: 3rem;
      margin-right: 17px;
     }
+    
   </style>
 </head>
 
 <body>
   <main class="container">
     <header class="card">
+     <div class="img-container">
       <img class="primary-img" src="images/image-equilibrium.jpg" alt="">
+     </div>
 
 
-      <h1> Equilibrium #3429</h1>
+      <h1 class="main"> Equilibrium #3429</h1>
       <p> Our Equilibrium collection promotes balance and calm.</p>
       <div class="details">
         <div class="left">
@@ -117,6 +141,8 @@
         <span class="primary"> Creation of <span class="main">Jules Wyvern</span> <span>
       </footer>
   </main>
+
+ 
 
 
 
